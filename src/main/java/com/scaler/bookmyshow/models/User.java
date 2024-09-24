@@ -9,9 +9,9 @@ import lombok.Data;
 @Data
 @Entity(name = "users")
 public class User extends BaseModel {
-    private String name;
     private String email;
-    private Long phoneNumber;
+    private String name;
+    private String password;
     @OneToMany
     private List<Booking> bookings;
 }
