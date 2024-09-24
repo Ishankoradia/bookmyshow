@@ -17,7 +17,6 @@ public class Payment extends BaseModel {
     private int amount;
     private String referenceNumber;
     @ManyToOne
-    @JoinColumn(name = "booking_id")
     private Booking booking;
 
     @Enumerated(EnumType.ORDINAL)
